@@ -1,3 +1,4 @@
+// db/index.js
 const { Sequelize } = require('sequelize')
 
 const sequelize = new Sequelize('myStore', 'root', '', {
@@ -5,4 +6,4 @@ const sequelize = new Sequelize('myStore', 'root', '', {
   dialect: 'mysql',
 })
 
-modole.exports = sequelize
+module.exports = sequelize
